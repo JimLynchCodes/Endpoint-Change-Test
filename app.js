@@ -17,10 +17,6 @@ app.get('/', function(req, res) {
 
   console.log('sent 2')
 
-  res.send({
-    "Output": "Hello Peeps!"
-  });
-
   console.log('sent 3')
 
 });
