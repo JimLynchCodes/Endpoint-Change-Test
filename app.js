@@ -11,6 +11,7 @@ app.get('/', function(req, res) {
 
   console.log('sent 1')
 
+  process.exit(1)
   console.log('sent 2')
 
   console.log('sent 3')
