@@ -1,5 +1,11 @@
+const awsServerlessExpressMiddleware = require('aws-serverless-express/middleware')
+const bodyParser = require('body-parser')
 var express = require('express');
 var app = express();
+app.use(cors())
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended: true}))
+app.use(awsServerlessExpressMiddleware.eventContext())
 
 app.get('/', function(req, res) {
 
