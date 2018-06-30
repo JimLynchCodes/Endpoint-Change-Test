@@ -3,15 +3,15 @@ var app = express();
 
 app.get('/', function(req, res) {
 
-  console.log('about to send')
+  console.log('about to send', req)
+  console.log('about to send', req.apiGateway)
 
   res.send({
     "Output": "Hello Peepers!"
   });
 
-  console.log('sent 1', req.apitGateway)
+  console.log('sent 1')
 
-  process.exit(1)
   console.log('sent 2')
 
   console.log('sent 3')
