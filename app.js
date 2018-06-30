@@ -2,9 +2,27 @@ var express = require('express');
 var app = express();
 
 app.get('/', function(req, res) {
+
+  console.log('about to send')
+
   res.send({
     "Output": "Hello Peeps!"
   });
+
+  console.log('sent 1')
+
+  res.send({
+    "Output": "Hello Peeps!"
+  });
+
+  console.log('sent 2')
+
+  res.send({
+    "Output": "Hello Peeps!"
+  });
+
+  console.log('sent 3')
+
 });
 
 app.post('/', function(req, res) {
