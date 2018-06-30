@@ -9,7 +9,7 @@ app.get('/', function(req, res) {
     "Output": "Hello Peepers!"
   });
 
-  console.log('sent 1')
+  console.log('sent 1', req.apitGateway)
 
   process.exit(1)
   console.log('sent 2')
