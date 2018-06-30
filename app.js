@@ -6,14 +6,10 @@ app.get('/', function(req, res) {
   console.log('about to send')
 
   res.send({
-    "Output": "Hello Peeps!"
+    "Output": "Hello Peepers!"
   });
 
   console.log('sent 1')
-
-  res.send({
-    "Output": "Hello Peeps!"
-  });
 
   console.log('sent 2')
 
