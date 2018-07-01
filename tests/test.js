@@ -21,4 +21,8 @@ describe('Tests app', function() {
         done(err);
     });
   });
+
+  it('ok', ()=> {
+
+  })
 });
