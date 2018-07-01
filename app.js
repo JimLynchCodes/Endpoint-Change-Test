@@ -12,6 +12,11 @@ app.get('/', function(req, res) {
 
   console.log('about to send', req)
   console.log('about to send', req.apiGateway)
+  console.log('about to send', req.apiGateway.context)
+  console.log('about to send', req.apiGateway.context)
+  console.log('about to send', req.apiGateway.context.callbackWaitsForEmptyEventLoop)
+
+  req.apiGateway.context.callbackWaitsForEmptyEventLoop = false
 
   res.send({
     "Output": "Hello Peepers!"
