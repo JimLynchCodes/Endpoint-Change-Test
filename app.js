@@ -18,7 +18,7 @@ app.get('/', function(req, res) {
 
   req.apiGateway.context.callbackWaitsForEmptyEventLoop = false
 
-  res.send({
+  return res.send({
     "Output": "Hello Peepers!"
   });
 
